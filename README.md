@@ -10,6 +10,7 @@ Yash Chaturvedi (801317460)
 
 Project Details : 
 Topic : Text To Speech 
+There are a number of different TTS engines available, ranging from cloud-based APIs to locally installed software. Some TTS engines use pre-recorded speech samples to generate audio, while others use algorithms to synthesize speech from scratch.In this TTS web application, the user typically types or pastes text into a form on the web page, and then clicks a button to initiate the TTS process. The generated audio is then played back to the user, either automatically or in response to a user action.
 
 
 Architecture Intended : 
