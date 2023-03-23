@@ -47,11 +47,12 @@ Week 3-4:
 Use the MobileNetSSD model and OpenCV to implement the object detection functionality.
 Integrate the object detection functionality with the capture and display of WebRTC video streams.
 Examine the object detection functionality on various devices and browsers.
-Use WebRTC communication and data exchange functionality to share the object detection results.
+Using the Streamlit webrtc_streamer function to capture the video stream from the user's camera, and displays the processed frames
 
 Week 5-6:
 
 Integrate with frontend and backend for user interface.
+Use WebRTC communication and data exchange functionality to share the object detection results.
 Refactor the code and improve performance.
 Tune the model parameters and reduce the computational load to improve the performance of the object detection functionality.
 Test the application on various devices and browsers and collect user feedback.
