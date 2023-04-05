@@ -4,11 +4,6 @@ import streamlit as st
 
 logger = logging.getLogger()
 
-# st.title("streamlit-webrtc demo!")
-# st.info(
-#     """👈 Try the demo
-# """
-# )
 
 
 if __name__ == "__main__":
