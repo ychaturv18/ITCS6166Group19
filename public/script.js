@@ -37,7 +37,7 @@ myPeer.on('open', id => {
 })
 
 
-
+/* function to add video stream*/
 function addVideoStream(video, stream) {
   video.srcObject = stream
   video.addEventListener('loadedmetadata', () => {
@@ -46,6 +46,7 @@ function addVideoStream(video, stream) {
   videotile.append(video)
 }
 
+/* function to connect to new user */
 function connectToNewUser(userId, stream) {
     const call = myPeer.call(userId, stream)
     const video = document.createElement('video')
