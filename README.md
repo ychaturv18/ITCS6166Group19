@@ -1,5 +1,6 @@
 # ITCS6166Group19
 
+
 # Group Members : 
 
 Kanchan Chandnani (801293770)
@@ -9,15 +10,17 @@ Yash Chaturvedi (801317460)
 
 
 Project Details : 
- # Topic : Real-Time Object-Detection
+
+# Topic : Real-Time Object-Detection
 
 A deep learning-based object identification model for mobile and embedded devices called MobileNetSSD. It is a variation of the MobileNet architecture, which is made to be compact and effective so that it may be used on gadgets with little processing power.
 
 A set of tools and features for processing still photos and moving pictures are offered by the open-source computer vision library known as OpenCV. It offers a number of algorithms for tasks like image filtering, feature detection, object recognition, and more. It supports a wide range of platforms, including desktop and mobile devices. It is possible to process photos and videos using OpenCV and employ MobileNetSSD-like object detection techniques. Developers can produce software that can recognize and track items by merging the two.
 
-This project uses OpenCV to perform real-time object detection using a laptop camera. The plan is to loop over each frame of the video stream, look for objects, and then box up each finding..
+This project uses OpenCV to perform real-time object detection using a laptop camera. The plan is to loop over each frame of the video stream, look for objects, and then box up each finding.
 
 # ML Model Insight:
+
 MobileNetSSD is an object detection model based on deep learning that is optimized for mobile and embedded devices. It is a MobileNet architecture variant that is lightweight and efficient, making it suitable for use on devices with limited computational resources.
 The MobileNet architecture employs depth-wise separable convolutions, which divide the standard convolution operation into depth-wise and point-wise convolutions. This reduces the number of parameters in the model and increases its computational efficiency while maintaining high accuracy. A single-shot detection (SSD) algorithm is used to train it to detect and classify objects in images. This means that the model detects and classifies objects in a single process through the image, making it easier and quicker than previous models.
 
