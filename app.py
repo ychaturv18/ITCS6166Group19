@@ -88,6 +88,10 @@ result_queue: "queue.Queue[List[Detection]]" = queue.Queue()
 
 
 def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
+    #Callback function that converts a video frame to a numpy array with the BGR24 format.
+    #Parameters:frame (av.VideoFrame): The video frame to be converted.
+    #Returns:av.VideoFrame: The converted video frame as a numpy array with the BGR24 format.
+
     image = frame.to_ndarray(format="bgr24")
 
     # Run inference
@@ -146,11 +150,6 @@ webrtc_ctx = webrtc_streamer(
 # if st.checkbox("Show the detected labels", value=True):
 #     if webrtc_ctx.state.playing:
 #         labels_placeholder = st.empty()
-#         # NOTE: The video transformation with object detection and
-#         # this loop displaying the result labels are running
-#         # in different threads asynchronously.
-#         # Then the rendered video frames and the labels displayed here
-#         # are not strictly synchronized.
 #         while True:
 #             result = result_queue.get()
 #             labels_placeholder.table(result)
