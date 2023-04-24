@@ -22,7 +22,7 @@ This project uses OpenCV to perform real-time object detection using a laptop ca
 To install the necessary packages we have used the following commands:
 
 - $ pip install -U streamlit streamlit-webrtc opencv-python-headless
-- 
+
 Streamlit : The streamlit main package.
 streamlit-webrtc : A custom component of Streamlit which deals with real-time video and audio streams.
 opencv-python-headless : OpenCV. We choose the headless version here because we will construct the UI with Streamlit.
