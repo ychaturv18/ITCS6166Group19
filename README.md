@@ -17,9 +17,19 @@ A set of tools and features for processing still photos and moving pictures are 
 
 This project uses OpenCV to perform real-time object detection using a laptop camera. The plan is to loop over each frame of the video stream, look for objects, and then box up each finding..
 
-# ML Model Insight:
-MobileNetSSD is an object detection model based on deep learning that is optimized for mobile and embedded devices. It is a MobileNet architecture variant that is lightweight and efficient, making it suitable for use on devices with limited computational resources.
-The MobileNet architecture employs depth-wise separable convolutions, which divide the standard convolution operation into depth-wise and point-wise convolutions. This reduces the number of parameters in the model and increases its computational efficiency while maintaining high accuracy. A single-shot detection (SSD) algorithm is used to train it to detect and classify objects in images. This means that the model detects and classifies objects in a single process through the image, making it easier and quicker than previous models.
+
+# Setting up Streamlit and Required Packages for Real-Time Video
+To install the necessary packages we have used the following commands:
+
+- $ pip install -U streamlit streamlit-webrtc opencv-python-headless
+Streamlit : The streamlit main package.
+streamlit-webrtc : A custom component of Streamlit which deals with real-time video and audio streams.
+opencv-python-headless : OpenCV. We choose the headless version here because we will construct the UI with Streamlit.
+
+To launch the streamlit, run the below command.
+-$ streamlit run app.py
+
+After a while, the Streamlit server process will boot up. Then access http://localhost:8501 to see the page like below (or it will automatically open in the browser by default).
 
 # Web RTC:
 WebRTC (Web Real-Time Communication) is a set of APIs that allow web browsers and mobile applications to communicate in real time. It includes audio and video streaming protocols and codecs, as well as tools for building peer-to-peer communication networks. Developers create real-time video communication applications with enhanced capabilities such as real-time object tracking, gesture recognition, and more by combining WebRTC and object detection.
