@@ -147,15 +147,21 @@ webrtc_ctx = webrtc_streamer(
     async_processing=True,
 )
 
-# if st.checkbox("Show the detected labels", value=True):
-#     if webrtc_ctx.state.playing:
-#         labels_placeholder = st.empty()
-#         while True:
-#             result = result_queue.get()
-#             labels_placeholder.table(result)
+if st.checkbox("Show the detected labels", value=True):
+    if webrtc_ctx.state.playing:
+        labels_placeholder = st.empty()
+        while True:
+            result = result_queue.get()
+            person_detections = [detection for detection in result if detection.label == "person"]
+            num_persons = len(person_detections)
+            labels_placeholder.table(result)
 
-# st.markdown(
-#     "This demo uses a model and code from "
-#     "https://github.com/robmarkcole/object-detection-app. "
-#     "Many thanks to the project."
-# )
+if webrtc_ctx.state.playing:
+    labels_placeholder = st.empty()
+    while True:
+        result = result_queue.get()
+        person_detections = [detection for detection in result if detection.label == "person"]
+        num_persons = len(person_detections)
+        labels_placeholder.table(result)
+        if result is not None:
+            labels_placeholder.write(f"Number of persons detected: {num_persons}")
