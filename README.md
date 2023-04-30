@@ -31,6 +31,9 @@ To launch the streamlit, run the below command.
 
 -$ streamlit run app.py
 
+Alternatively, try the below command if you're getting an error streamlit is not recognized even after installing the necessary packages.
+-$ python -m streamlit run app.py
+
 After a while, the Streamlit server process will boot up. Then access http://localhost:8501 to see the page like below (or it will automatically open in the browser by default).
 
 # Web RTC:
